@@ -1,0 +1,25 @@
+Answers to the Questions: 
+1/ What is a server ? 
+A server is a computer without keyboard or mouse or a software that is only accessible by a Network.
+It runs an OS.
+They are Hosted in Data Centers.
+2/ What is the role of the Domain Name ?
+Machines communicate with each other using IP addresses while humans cant remember IP addresses, so we name them human-readable names.
+The DNS translates the Human-readable names into IP addresses.
+3/ What type of DNS record www is in www.foobar.com?
+WWW.foobar.com is an A Record because it resolves to the IP address: 8.8.8.8 
+4/What is the role of the web server?
+A web servers handles : HTTP, HTTPS requests.
+Content serving; for static content
+Reverse Proxying: For Dynamic content or multiple application servers, it forwards the request to the appropriate application server
+and returns teh application server's response to the client
+5/What is the role of the database ?
+Store's the application's data
+6/What is the server using to communicate with the computer of the user requesting the website ?
+HTTP or HTTPS  over the internet (A TCP/IP Network)
+
+ISSUES with the Infrastructure : 
+1- This one server infrastructure has a single point of failure . Aka, if the server experiences an issue or goes offline, the
+entire website becomes inaccessible
+2- During Maintenance tasks; when deploying new code; the web server needs to be restarted which results in : downtime for the website
+3-This one server infrastructure will struggle to handle a large volume of incoming traffic

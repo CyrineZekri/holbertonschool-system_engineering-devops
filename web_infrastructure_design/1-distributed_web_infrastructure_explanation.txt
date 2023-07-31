@@ -1,0 +1,17 @@
+Answers to Questions: 
+1/ The Load balancer is configured at Round Robin, it evenly distributes requests between servers
+2/Active-Active set-up :
+all servers in the backend are actively handling incoming requests simultaneously
+the load balancer distributes the incoming traffic across all available servers in an even manner 
+This mode allows the system to handle higher volume of traffic and provides better resource utilization
+3/ The replica nodes are read-only copies of the data from the primary node.
+When it recieves a write operation, such as : insert, update or delete, it sends the request to the primary node
+The replica nodes keep their data consistent by pulling the replication log on the primary node  
+4/Replica nodes accept read-only requests
+primary node executes write requests 
+
+Issues with this infrastructure: 
+- it still has a single point of failure: the load balancer
+- There is no monitoring 
+- The communications are not secure 
+

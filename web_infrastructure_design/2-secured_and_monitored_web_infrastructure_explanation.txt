@@ -1,0 +1,18 @@
+Answers to the questions : 
+1/ What are firewalls for ?
+network security softwares designed to monitor and control incoming and outgoing network traffic based on pre defined rules
+they prevent unauthorized access to the networkx    
+2/Why is the traffic served over HTTPS?
+Encrypted communications ensure data security and user privacy
+3/What monitoring is used for?
+Monitoring is used to make sure everything(Application and servers) is functioning as its expected.
+that it is behaving in the correct speed or being overloaded
+4/How the monitoring tool is collecting data?
+there are monitoring clients on each server, they collect data such as CPU usage, memory usage, disk space, network traffic
+All that data is sent to the monitoring service 
+5/Explain what to do if you want to monitor your web server QPS ?
+the monitoring tool can track the number of HTTP requests on each web server over a specific period.
+ISSUES : 
+- The communication between the Load balancer and the servers isnt secured. the SSL is only between browser and load balancer
+- Only one MySQOL accepts write requests which lead to a single point of Failure Agan
+- All servers have the same components which makes the possibility of uniform failure.Introducing diversity in the infrastructure enhances resilience

@@ -1,0 +1,1 @@
+Configuring two load balancers as a cluster involves setting up a High Availability (HA) setup to ensure continuous operation even if one load balancer fails
